@@ -12,7 +12,7 @@ from google.genai import types
 from pypdf import PdfReader
 
 # ----------------------------- Config ---------------------------------------
-DEFAULT_MODEL = "gemini-2.5-flash"  # override with GEMINI_MODEL in secrets/env
+DEFAULT_MODEL = "gemini-3.8-flash"  # override with GEMINI_MODEL in secrets/env
 MAX_CHARS = 20000  # safety cap on text sent to the model
 MIN_CHARS = 150  # below this we assume the file is scanned / empty
 
@@ -161,7 +161,6 @@ def analyze_resume(client, model: str, resume_text: str, job_desc: str = "") -> 
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
-            temperature=0.2,
             response_mime_type="application/json",
         ),
     )
