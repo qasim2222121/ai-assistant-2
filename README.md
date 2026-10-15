@@ -1,4 +1,3 @@
-# ai-assistant-2
 # ATS Resume Checker
 
 Upload a resume (PDF, DOCX or TXT) and get an ATS score, a category breakdown,
@@ -19,7 +18,7 @@ Get a free key at https://aistudio.google.com/apikey
 | Name | Purpose | Default |
 |------|---------|---------|
 | `GEMINI_API_KEY` | Gemini API key (env var or Streamlit secret) | none |
-| `GEMINI_MODEL` | Gemini model name | `gemini-2.5-flash` |
+| `GEMINI_MODEL` | Gemini model name | `gemini-3.8-flash` |
 
 For local secrets, create `.streamlit/secrets.toml` (never commit it):
 ```toml
